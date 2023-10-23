@@ -178,7 +178,12 @@ img{
     align-items: center;
 }
 
-.nav__logo,
+.nav__logo{
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+    font-size: larger;
+}
+
 .nav__toggle{
     color: var(--title-color);
     font-weight: var(--font-medium);
@@ -265,11 +270,11 @@ img{
 .home__social{
     display: grid;
     grid-template-columns: max-content;
-    row-gap: 1rem;
+    row-gap: 1.20rem;
 }
 
 .home__social-icon{
-    font-size: 1.25rem;
+    font-size: 1.8rem;
     color: var(--first-color);
 }
 
