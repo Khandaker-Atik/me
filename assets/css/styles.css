@@ -185,14 +185,14 @@ img{
 }
 
 .nav__logo:hover{
-    color: var(--first-color);
+    color: rgb(255, 68, 0);
 }
 .nav__toggle{
     font-size:  1.1rem;
     cursor: pointer;
 }
 .nav__toggle:hover{
-    color: var(--first-color);
+    color: yellow;
 }
 @media screen and (max-width: 767px){
     .nav__menu{
@@ -221,7 +221,7 @@ img{
 }
 
 .nav__link:hover{
-    color: var(--first-color);
+    color:red;
 }
 .nav__icon{
     font-size: 1.2rem;
@@ -235,7 +235,7 @@ img{
     color: var(--first-color);
 }
 .nav__close:hover{
-    color: var(--first-color-alt);
+    color:yellow;
 }
 /* show menu */
 .show-menu{
@@ -274,7 +274,7 @@ img{
 }
 
 .home__social-icon:hover{
-    color: var(--first-color-alt);
+    color: rgb(255, 13, 166);
 }
 
 .home__blob{
@@ -340,7 +340,8 @@ img{
 }
 
 .button:hover{
-    background-color: var(--first-color-alt);
+    background-color: yellow;
+    color: red
 }
 
 .button__icon{
@@ -634,18 +635,19 @@ img{
 }
 /*==================== FOOTER ====================*/
 .footer{
-    padding-top: 2rem;
+    padding-top: 4rem;
 }
 .footer__container{
     row-gap: 3.5rem;
 }
 .footer__bg{
-    background-color: var(--first-color-second);
+    background-color: black;
     padding: 2rem 0 3rem;
 }
 .footer__title{
     font-size: var(--h1-font-size);
     margin-bottom: var(--mb-0-25);
+    
 }
 .footer__subtitle{
     font-size: var(--small-font-size);
@@ -656,11 +658,12 @@ img{
     row-gap: 1.5rem;
 }
 .footer__link:hover{
-    color: var(--first-color-lighter);
+    color:yellow;
 }
 .footer__socials{
-    font-size: 1.25rem;
-    margin-right: var(--mb-1-5);
+    font-size: 1.3rem;
+    margin-top: var(--mb-3);
+    color:white;
 }
 .footer__social:hover{
     color: yellow;
@@ -668,7 +671,7 @@ img{
 .footer__copy{
     font-size: var(--smaller-font-size);
     text-align: center;
-    color: var(--text-color-light);
+    color: white;
     margin-top: var(--mb-3);
 }
 
@@ -676,8 +679,9 @@ img{
 .footer__subtitle,
 .footer__links,
 .footer__socials{
-    color: rgb(0, 255, 234);
+    color: rgb(255, 255, 255);
 }
+
 
 
 /*========== SCROLL UP ==========*/
@@ -692,10 +696,10 @@ img{
     z-index: var(--z-tooltip);
     transition: .4s;
 }
-.scrolldown:hover{
+.scrollup:hover{
     background-color: var(--first-color-alt);
 }
-.scrolldown__icon{
+.scrollup__icon{
     font-size: 1.8rem;
     color: #000000;
 }
@@ -794,7 +798,7 @@ img{
     .header,
     .main,
     .footer__container{
-        padding: 0 1rem;
+        padding: 0 20%;
     }
     .nav{
         height: calc(var(--header-height)+ 1.5rem);
@@ -865,21 +869,16 @@ img{
     .portfolio__content{
         align-items: center;
     }
-    .footer__container{
-        grid-template-columns: repeat(3, 1fr);
-    }
-    .footer__bg{
-        padding: 3rem 0 3.5rem;
-    }
-    .footer__links{
-        flex-direction: row;
-        column-gap: 2rem;
-    }
+
     .footer__socials{
         justify-self: flex-end;
+        align-items: center;
+        text-align: center;
+        font-size: auto;
+        
     }
     .footer__copy{
-        margin-top: 4.5rem;
+        margin-top: auto;
     }
 }
 
